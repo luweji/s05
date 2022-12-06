@@ -4,8 +4,66 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Introduction and Selectors</title>
+	<!-- 
+		Internal styling allows us to add css within a page without the use of the style attribute per element. In internal style, you can select multiple elements to style within the HTML where the internal style is.
+	 -->
+	 <!-- Internal Style
+	 <style> 
+	 	h1 {
+	 		color:  green;
+	 	}
+	 </style>
+	-->
+	<!-- Best Practice: External Styling or External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-	
+	<!-- Inline Style 
+			Inline styling is done when we add a style attribute to our tag. This will allow us to change the styles of an element. The values before the colon(;) are the style properties of an element that we want to change and the value after the colon are the values that we would like to assign to a property.
+
+			<tag style="property:value; property:value;">
+	-->
+	<!-- navbar -->
+		<!-- semantics: refers to the meaning of a piece of code.
+			ex. header
+				nav
+				section
+				article
+				aside
+				footer
+		 nav element desfines a set of navigation links.
+		 -->
+		 <nav id="top">
+		 	<a href="#landing">Centro Escolar</a>
+		 	<div>
+		 		<a href="#landing">Landing</a>
+		 		<a href="#register">Register</a>
+		 	</div>
+		 </nav>
+	<!-- end of navbar -->
+
+	<!-- landing page -->
+	<section id="landing">
+		<!-- section element defines section in document -->
+		<!-- ids are unique identifiers of an element -->
+		<h2>Welcome to Centro Escolar University</h2>
+		<h3 id="ceu-motto">Ciencia y Virtud</h3>
+
+		<!-- image of scary puppy -->
+		<img src="https://place-puppy.com/450x450" alt="imagePuppy">
+
+		<ol>
+			<li>Day Classes</li>
+			<li>Night Classes</li>
+			<li>Hybrid Classes</li>
+		</ol>
+	</section>
+	<!-- end of landing page -->
+
+	<!-- regsiter page -->
+	<!-- end of register page -->
+
+	<!-- footer -->
+	<!-- end of footer -->
 </body>
 </html>

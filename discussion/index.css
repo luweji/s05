@@ -1,0 +1,20 @@
+/*
+	CSS syntax:
+	selector {
+		property:value;
+	}
+*/
+/*Universal Selector - allows us to select ALL of our elements*/
+* {
+	/* ALL elements will get the assigned style*/
+	/*ALL elements will have a font style of Courier New and by defult, will be about 20 px.
+	*/
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	/* CSS Reset */
+	margin: 0;
+	padding: 0;
+}
+/*id selector*/
+/*type selector*/
+/*class selector*/
