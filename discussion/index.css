@@ -15,6 +15,129 @@
 	margin: 0;
 	padding: 0;
 }
-/*id selector*/
-/*type selector*/
-/*class selector*/
+
+body {
+	background-color: skyblue ;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+nav {
+	background-color: white;
+}
+/*id selector - it is given more priority than the other selectors*/
+#ceu-motto {
+	letter-spacing: 5px;
+}
+/*type selector - allows us to select all elements of the same type/tag*/
+h1 {
+	color: black; !important;
+	text-align: center;
+	font-size: 2rem;
+	/* rem is a measurement which means num * the default size of root elements 
+	
+	Any declaration !important will be the highest priority.
+	This is especially useful if you want to override a css style.
+	However, if an implementation of the keyword in internal or inline css, we will still follow the level of specificity
+		1. inline with !important
+		2. internal with !important
+		3. external with !important
+	*/
+
+
+} 
+
+section {
+	height: 100vh;
+	/*vh means viewport height meaning in this measurement takes the percentage of the overall height of the scree you are viewing with*/
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+ol {
+	list-style-type: none;
+}
+
+/*attribute-selector allows us to select a particular elements with the same attributes
+	tagname[attribute]
+		border-width:  allows us to determine the thickness of an elements's border
+		border-style:  allows us to determine the style of the border
+		border-color: allows us to determine the color of an element's border
+*/
+input[required] {
+	border-width: 2px;
+	border-style: solid;
+	border-color: navy;
+	width: 90%;
+}
+/*class selector for elements of the same classes*/
+.offering-item {
+		text-transform: uppercase;
+}
+
+/*Adjacent Sibling Selector - allows to select a particular element that immediately follows a sibling element.
+	selector + selector
+*/
+
+#ceu-motto + img {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+}
+
+/*Descendant Selector allows us to select elements that are the descendants of the first selector (ancestor)
+ancestor li
+*/
+
+#ceu-learning-list li {
+	color: #075966;
+}
+
+/*General Sibling Selector - allows to select siblings that are after our previous sibling (first selector)
+sibling ~ selected sibling
+*/
+h2 ~ a {
+	text-decoration: none;
+}
+
+form {
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	height: 185px;
+	width: 25vw;
+
+	/*The position property changes the position of an element based on a certain crteria.
+
+	position: relative; - it allows to move our element in relation to its original position in the HTML document.
+
+	left property is used alongside the position property to add a certain measurement of the parent element*/
+	position: relative;
+	left: 37.25%;
+}
+
+/*
+	Child selector allows us to select a particular child of a parent element.
+	parent > child
+*/
+
+section > form > label {
+	color: rgb(0,0,128);
+}
+
+/*Mini-Activity
+	Style our button with the following: ;
+		- the text of the button should be white
+		- the background color of the button has a hex value #cf0053;
+		- it should have 0 border
+		- its border radius should be at least 15px.
+*/
+section > form >button {
+	color: white;
+	background-color: #cf0053;
+	border: 0px;
+	border-radius: 15px;
