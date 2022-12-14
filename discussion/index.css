@@ -1,4 +1,4 @@
-/*
+
 	CSS syntax:
 	selector {
 		property:value;
@@ -25,6 +25,18 @@ html {
 }
 nav {
 	background-color: white;
+}
+
+/*selector: hover - pseudo class*/
+/*change the style of the element when hovered over.*/
+a:hover {
+	background-color: #b46de;
+}
+
+/*display property*/
+div {
+	display: inline-block;
+	float: right;
 }
 /*id selector - it is given more priority than the other selectors*/
 #ceu-motto {
@@ -141,3 +153,16 @@ section > form >button {
 	background-color: #cf0053;
 	border: 0px;
 	border-radius: 15px;
+/*	padding: 5px;*/
+	margin-top: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	/*button {
+		background-color:  #cf0053;
+		color: white;
+		border: 0;
+		border-radius: 15px;
+	}
+	

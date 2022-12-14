@@ -1,0 +1,38 @@
+*{
+	font-family: "Verdana";
+	font-size: 32px;
+}
+h1 {
+	font-size: 3rem
+}
+#h2tag {
+	text-transform: uppercase;
+}
+.learning-list {
+		background-color: lightgreen;
+}
+[id~='tools'] {
+	border-width: 2px;
+	border-style: solid;
+	border-color: navy;
+}
+img + ul {
+	list-style-type: none;
+}
+#other-things + img {
+	height: 300px;
+	width: 800px;
+/*	border-radius: 150px;
+*/}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#things-list ~ #last-p {
+	text-align: center;
+}
+#things-list > li {
+		letter-spacing: 10px;
+}
